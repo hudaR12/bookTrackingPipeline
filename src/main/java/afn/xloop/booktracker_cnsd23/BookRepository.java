@@ -20,6 +20,10 @@ public class BookRepository implements IBookRepository<Book> {
         this.booklistrepo.put(book.getId(), book);
     }
 
+    public Book getBook(int i){
+        return booklistrepo.get(i);
+    }
+
     @Override
     public Collection<Book> getAllBook() {
         return this.booklistrepo.values();
