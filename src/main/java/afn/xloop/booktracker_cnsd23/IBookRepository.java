@@ -5,4 +5,5 @@ import java.util.Collection;
 public interface IBookRepository<T> {
     public void save(T t);
     public Collection<T> getAllBook();
+    public T updateBook(T t);
 }

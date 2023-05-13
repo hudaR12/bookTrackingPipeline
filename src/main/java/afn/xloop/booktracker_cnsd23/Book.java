@@ -22,4 +22,8 @@ public class Book {
         this.year = year;
         this.pages = pages;
     }
+
+    public Book toArray() {
+        return null;
+    }
 }

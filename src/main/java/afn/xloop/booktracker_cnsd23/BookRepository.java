@@ -29,4 +29,14 @@ public class BookRepository implements IBookRepository<Book> {
         return this.booklistrepo.values();
     }
 
+    @Override
+    public Book updateBook(Book book){
+        this.booklistrepo.put(book.getId(), book);
+        return this.getBook(book.getId());
+    }
+
+    public void deleteBook(int id) {
+        this.booklistrepo.remove(id);
+    }
+
 }
