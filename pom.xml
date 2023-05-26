@@ -39,7 +39,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+bookMsg
 	<build>
 		<plugins>
 			<plugin>
@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<fileName>bookMsg</fileName>
 	</build>
 
 </project>
